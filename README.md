@@ -32,7 +32,7 @@ Create `.env.local` for local development or configure these variables in deploy
 ```bash
 GITHUB_TOKEN=
 GITHUB_OWNER=
-GITHUB_REPO=obfuscation-identity-archive-submissions
+GITHUB_REPO=obfuscation-identity-archive-survey
 GITHUB_BRANCH=main
 GITHUB_SUBMISSIONS_PATH=submissions
 GITHUB_COMMITTER_NAME=Obfuscation Archive Bot
