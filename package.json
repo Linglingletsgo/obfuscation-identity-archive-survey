@@ -11,7 +11,7 @@
     "generate:survey": "node scripts/generate-survey-data.mjs"
   },
   "dependencies": {
-    "next": "15.5.7",
+    "next": "^16.2.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "survey-core": "^2.3.16",
@@ -22,5 +22,8 @@
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
     "typescript": "^5.7.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }
