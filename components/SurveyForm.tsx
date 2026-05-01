@@ -28,16 +28,16 @@ const submissionText: Record<
   }
 > = {
   default: {
-    idle: "Results will be converted to the project JSON schema and committed to GitHub.",
+    idle: "Complete the questionnaire, then submit the archive.",
     submitting: "Submitting archive to GitHub...",
-    successPrefix: "Submitted file code:",
-    saveCode: "Please save this file code / submission ID. It is the only code shown to you for identifying your submitted record later."
+    successPrefix: "Submitted submission ID:",
+    saveCode: "Please save this submission ID. It is the only code shown to you for identifying your submitted record later."
   },
   "zh-cn": {
-    idle: "结果会被转换为项目 JSON 结构，并提交到 GitHub。",
+    idle: "请完成问卷，然后提交档案。",
     submitting: "正在提交档案到 GitHub...",
-    successPrefix: "已提交，文件编码：",
-    saveCode: "请保存这个文件编码 / submission ID。这是之后识别你提交记录的唯一编码。"
+    successPrefix: "已提交，submission ID：",
+    saveCode: "请保存这个 submission ID。这是之后识别你提交记录的唯一编码。"
   }
 };
 

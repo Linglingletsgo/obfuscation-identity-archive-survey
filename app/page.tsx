@@ -8,7 +8,6 @@ export default function Home() {
         <h1>Build an identity that refuses clean prediction.</h1>
         <p>
           Assemble an obfuscation identity with tags, false routes, non-human fragments, and one carried fragment.
-          The submitted result is stored as project-compatible JSON.
         </p>
       </section>
       <SurveyFormClient />
