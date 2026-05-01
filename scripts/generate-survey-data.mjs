@@ -11,15 +11,15 @@ const QUESTION_CONFIG = [
   { q: 2, name: "places", type: "checkbox", maxSelectedChoices: 6 },
   { q: 3, name: "expression_formats", type: "checkbox", maxSelectedChoices: 5 },
   { q: 4, name: "material_sources", type: "checkbox", maxSelectedChoices: 8 },
-  { q: 5, name: "social_role_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 6, name: "spatial_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 7, name: "time_era_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 8, name: "platform_behavior_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 9, name: "emotion_personality_tags", type: "checkbox", maxSelectedChoices: 7 },
-  { q: 10, name: "relationship_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 11, name: "aesthetic_cultural_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 12, name: "system_tags", type: "checkbox", maxSelectedChoices: 6 },
-  { q: 13, name: "non_human_tags", type: "checkbox", maxSelectedChoices: 12 }
+  { q: 5, name: "social_role_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 6, name: "spatial_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 7, name: "time_era_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 8, name: "platform_behavior_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 9, name: "emotion_personality_tags", type: "checkbox", minSelectedChoices: 4, maxSelectedChoices: 7 },
+  { q: 10, name: "relationship_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 11, name: "aesthetic_cultural_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 12, name: "system_tags", type: "checkbox", minSelectedChoices: 3, maxSelectedChoices: 6 },
+  { q: 13, name: "non_human_tags", type: "checkbox", minSelectedChoices: 6, maxSelectedChoices: 12 }
 ];
 
 function sectionForQuestion(text, questionNumber) {

@@ -538,6 +538,7 @@ export const generatedQuestionDefinitions = [
     "q": 5,
     "name": "social_role_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q5. Social Role Tags",
@@ -765,6 +766,7 @@ export const generatedQuestionDefinitions = [
     "q": 6,
     "name": "spatial_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q6. Spatial Tags",
@@ -992,6 +994,7 @@ export const generatedQuestionDefinitions = [
     "q": 7,
     "name": "time_era_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q7. Time / Era Tags",
@@ -1226,6 +1229,7 @@ export const generatedQuestionDefinitions = [
     "q": 8,
     "name": "platform_behavior_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q8. Platform Behavior / Consumption Tags",
@@ -1418,6 +1422,7 @@ export const generatedQuestionDefinitions = [
     "q": 9,
     "name": "emotion_personality_tags",
     "type": "checkbox",
+    "minSelectedChoices": 4,
     "maxSelectedChoices": 7,
     "title": {
       "default": "Q9. Emotion / Personality Tags",
@@ -1631,6 +1636,7 @@ export const generatedQuestionDefinitions = [
     "q": 10,
     "name": "relationship_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q10. Relationship Tags",
@@ -1816,6 +1822,7 @@ export const generatedQuestionDefinitions = [
     "q": 11,
     "name": "aesthetic_cultural_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q11. Aesthetic / Cultural Tags",
@@ -2001,6 +2008,7 @@ export const generatedQuestionDefinitions = [
     "q": 12,
     "name": "system_tags",
     "type": "checkbox",
+    "minSelectedChoices": 3,
     "maxSelectedChoices": 6,
     "title": {
       "default": "Q12. System Tags",
@@ -2214,6 +2222,7 @@ export const generatedQuestionDefinitions = [
     "q": 13,
     "name": "non_human_tags",
     "type": "checkbox",
+    "minSelectedChoices": 6,
     "maxSelectedChoices": 12,
     "title": {
       "default": "Q13. Non-human Tags",

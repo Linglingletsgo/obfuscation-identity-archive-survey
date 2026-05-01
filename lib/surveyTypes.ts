@@ -15,6 +15,7 @@ export type SurveyQuestionDefinition = {
   title: LocaleText;
   choices: SurveyChoice[];
   isRequired?: boolean;
+  minSelectedChoices?: number;
   maxSelectedChoices?: number;
   showOtherItem: boolean;
   otherText: LocaleText;
