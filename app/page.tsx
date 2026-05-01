@@ -1,4 +1,4 @@
-import { SurveyForm } from "@/components/SurveyForm";
+import { SurveyFormClient } from "@/components/SurveyFormClient";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
           The submitted result is stored as project-compatible JSON.
         </p>
       </section>
-      <SurveyForm />
+      <SurveyFormClient />
     </main>
   );
 }

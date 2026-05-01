@@ -63,6 +63,11 @@ h1 {
   overflow: hidden;
 }
 
+.survey-loading {
+  padding: 40px 24px;
+  color: var(--charcoal);
+}
+
 .language-switch {
   display: flex;
   justify-content: flex-end;
