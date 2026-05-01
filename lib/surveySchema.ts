@@ -103,8 +103,8 @@ export function createSurveyJson() {
             name: "carried_fragment",
             isRequired: true,
             title: {
-              default: "Q17. Leave one thing this obfuscation identity carries, hides, transmits, or invents",
-              "zh-cn": "Q17. 请留下这个混淆身份携带、隐藏、传递或发明的一样东西"
+              default: "Q15. Leave one thing this obfuscation identity carries, hides, transmits, or invents",
+              "zh-cn": "Q15. 请留下这个混淆身份携带、隐藏、传递或发明的一样东西"
             },
             description: {
               default:
@@ -127,8 +127,8 @@ export function createSurveyJson() {
             name: "consent_agreement",
             isRequired: true,
             title: {
-              default: "Q18. Do you agree to the data-use scope stated at the beginning of this questionnaire?",
-              "zh-cn": "Q18. 您是否同意本问卷开头所述的数据使用范围？"
+              default: "Q16. Do you agree to the data-use scope stated at the beginning of this questionnaire?",
+              "zh-cn": "Q16. 您是否同意本问卷开头所述的数据使用范围？"
             },
             choices: [
               {

@@ -26,8 +26,8 @@ export default function Home() {
               <li>15 questions in total</li>
               <li>A. Basic Assembly: Q1-Q4</li>
               <li>B. Tag Assembly: Q5-Q13</li>
-              <li>C. Text Fragments: Q14 and Q17</li>
-              <li>D. Consent: Q18</li>
+              <li>C. Text Fragments: Q14-Q15</li>
+              <li>D. Consent: Q16</li>
             </ul>
           </aside>
         </div>
