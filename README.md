@@ -1,6 +1,6 @@
 # Obfuscation Identity Archive Survey
 
-A bilingual SurveyJS + Next.js 15.5.7 questionnaire for the Obfuscation Identity Archive.
+A bilingual SurveyJS + Next.js 16 questionnaire for the Obfuscation Identity Archive.
 
 ## What It Does
 
@@ -11,7 +11,7 @@ A bilingual SurveyJS + Next.js 15.5.7 questionnaire for the Obfuscation Identity
 
 ## Tech Stack
 
-- Next.js `15.5.7`
+- Next.js `16.2.4`
 - React `19.1.0`
 - SurveyJS Form Library (`survey-core`, `survey-react-ui`)
 - GitHub REST Contents API
@@ -36,7 +36,7 @@ GITHUB_REPO=obfuscation-identity-archive-survey
 GITHUB_BRANCH=main
 GITHUB_SUBMISSIONS_PATH=submissions
 GITHUB_COMMITTER_NAME=Obfuscation Archive Bot
-GITHUB_COMMITTER_EMAIL=obfuscation-archive@example.com
+GITHUB_COMMITTER_EMAIL=actions@users.noreply.github.com
 ```
 
 `GITHUB_TOKEN` must be server-side only. Do not expose it to the browser. Use a fine-grained GitHub token with Contents read/write access to the target submissions repository.
@@ -49,7 +49,6 @@ Each submission is committed as JSON with fields such as:
 {
   "submission_id": "submission_20260501000000_abcd1234",
   "dataset": "Obfuscation Identity Archive",
-  "version": "v0.4",
   "is_test_data": false,
   "submitted_at": "2026-05-01T00:00:00.000Z",
   "shell_form": "Real self",
@@ -72,6 +71,6 @@ Each submission is committed as JSON with fields such as:
 }
 ```
 
-## Important Note
+## Frontend Submission State
 
-This app uses the user-requested Next.js version `15.5.7`. `npm install` reports known vulnerabilities for that exact version. If deployment security matters, upgrade Next.js after confirming compatibility.
+After a successful submission, the frontend only displays the generated `submission_id`. GitHub file and commit URLs are not shown to participants.

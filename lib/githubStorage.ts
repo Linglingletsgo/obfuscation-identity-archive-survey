@@ -21,7 +21,7 @@ export async function saveSubmissionToGitHub(record: Record<string, unknown>) {
   const branch = process.env.GITHUB_BRANCH || "main";
   const basePath = process.env.GITHUB_SUBMISSIONS_PATH || "submissions";
   const committerName = process.env.GITHUB_COMMITTER_NAME || "Obfuscation Archive Bot";
-  const committerEmail = process.env.GITHUB_COMMITTER_EMAIL || "obfuscation-archive@example.com";
+  const committerEmail = process.env.GITHUB_COMMITTER_EMAIL || "actions@users.noreply.github.com";
   const submissionId = String(record.submission_id);
   const filePath = `${basePath}/${submissionId}.json`;
   const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;

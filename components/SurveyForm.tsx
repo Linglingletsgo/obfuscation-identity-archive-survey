@@ -10,7 +10,7 @@ type Locale = "default" | "zh-cn";
 type SubmissionState =
   | { status: "idle" }
   | { status: "submitting" }
-  | { status: "success"; submissionId: string; fileUrl?: string; commitUrl?: string }
+  | { status: "success"; submissionId: string }
   | { status: "error"; message: string };
 
 const localeLabels: Record<Locale, string> = {
@@ -37,17 +37,11 @@ export function SurveyForm() {
         const result = (await response.json()) as {
           error?: string;
           submission_id?: string;
-          github?: {
-            fileUrl?: string;
-            commitUrl?: string;
-          };
         };
         if (!response.ok) throw new Error(result.error || "Submission failed.");
         setSubmission({
           status: "success",
-          submissionId: result.submission_id || "unknown",
-          fileUrl: result.github?.fileUrl,
-          commitUrl: result.github?.commitUrl
+          submissionId: result.submission_id || "unknown"
         });
       } catch (error) {
         setSubmission({
@@ -82,16 +76,6 @@ export function SurveyForm() {
         {submission.status === "success" && (
           <div>
             <p>Submitted: {submission.submissionId}</p>
-            {submission.fileUrl && (
-              <p>
-                File: <a href={submission.fileUrl}>{submission.fileUrl}</a>
-              </p>
-            )}
-            {submission.commitUrl && (
-              <p>
-                Commit: <a href={submission.commitUrl}>{submission.commitUrl}</a>
-              </p>
-            )}
           </div>
         )}
         {submission.status === "error" && <p>{submission.message}</p>}

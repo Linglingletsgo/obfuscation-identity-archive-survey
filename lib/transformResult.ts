@@ -54,7 +54,6 @@ export function transformSurveyResult(data: RawSurveyData) {
   const record: Record<string, unknown> = {
     submission_id: submissionId,
     dataset: "Obfuscation Identity Archive",
-    version: "v0.4",
     is_test_data: false,
     submitted_at: now.toISOString(),
     shell_form: normalizeSingle(data, "shell_form")
