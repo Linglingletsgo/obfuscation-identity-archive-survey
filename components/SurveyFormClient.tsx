@@ -8,7 +8,7 @@ export const SurveyFormClient = dynamic(
     ssr: false,
     loading: () => (
       <section className="survey-shell survey-loading">
-        Loading questionnaire...
+        Preparing the archive form...
       </section>
     ),
   },

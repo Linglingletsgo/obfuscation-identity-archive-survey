@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Obfuscation Identity Archive",
-  description: "A bilingual SurveyJS questionnaire for the Obfuscation Identity Archive."
+  description: "An anonymous bilingual archive for assembling obfuscated identities."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

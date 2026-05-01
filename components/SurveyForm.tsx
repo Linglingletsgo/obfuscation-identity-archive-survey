@@ -28,16 +28,16 @@ const submissionText: Record<
   }
 > = {
   default: {
-    idle: "Complete the questionnaire, then submit the archive.",
-    submitting: "Submitting archive to GitHub...",
-    successPrefix: "Submitted submission ID:",
-    saveCode: "Please save this submission ID. It is the only code shown to you for identifying your submitted record later."
+    idle: "Complete the archive form, then submit your obfuscated identity.",
+    submitting: "Sealing and submitting the archive entry...",
+    successPrefix: "Submission ID:",
+    saveCode: "Save this submission ID. It is the only identifier shown for your archive entry."
   },
   "zh-cn": {
-    idle: "请完成问卷，然后提交档案。",
-    submitting: "正在提交档案到 GitHub...",
-    successPrefix: "已提交，submission ID：",
-    saveCode: "请保存这个 submission ID。这是之后识别你提交记录的唯一编码。"
+    idle: "请完成档案表单，然后提交你的混淆身份。",
+    submitting: "正在封存并提交档案条目...",
+    successPrefix: "Submission ID：",
+    saveCode: "请保存这个 submission ID。这是之后识别该档案条目的唯一编码。"
   }
 };
 
@@ -79,7 +79,7 @@ export function SurveyForm() {
   return (
     <section className="survey-shell">
       <div className="survey-toolbar">
-        <p>Choose language / 选择语言</p>
+        <p>Language / 语言</p>
         <div className="language-switch" aria-label="Language switch">
           {(Object.keys(localeLabels) as Locale[]).map((item) => (
             <button
