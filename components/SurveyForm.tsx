@@ -18,6 +18,29 @@ const localeLabels: Record<Locale, string> = {
   "zh-cn": "中文"
 };
 
+const submissionText: Record<
+  Locale,
+  {
+    idle: string;
+    submitting: string;
+    successPrefix: string;
+    saveCode: string;
+  }
+> = {
+  default: {
+    idle: "Results will be converted to the project JSON schema and committed to GitHub.",
+    submitting: "Submitting archive to GitHub...",
+    successPrefix: "Submitted file code:",
+    saveCode: "Please save this file code / submission ID. It is the only code shown to you for identifying your submitted record later."
+  },
+  "zh-cn": {
+    idle: "结果会被转换为项目 JSON 结构，并提交到 GitHub。",
+    submitting: "正在提交档案到 GitHub...",
+    successPrefix: "已提交，文件编码：",
+    saveCode: "请保存这个文件编码 / submission ID。这是之后识别你提交记录的唯一编码。"
+  }
+};
+
 export function SurveyForm() {
   const [locale, setLocale] = useState<Locale>("default");
   const [submission, setSubmission] = useState<SubmissionState>({ status: "idle" });
@@ -71,11 +94,14 @@ export function SurveyForm() {
       <Survey model={survey} />
 
       <div className={`submission-state ${submission.status}`}>
-        {submission.status === "idle" && <p>Results will be converted to the project JSON schema and committed to GitHub.</p>}
-        {submission.status === "submitting" && <p>Submitting archive to GitHub...</p>}
+        {submission.status === "idle" && <p>{submissionText[locale].idle}</p>}
+        {submission.status === "submitting" && <p>{submissionText[locale].submitting}</p>}
         {submission.status === "success" && (
           <div>
-            <p>Submitted: {submission.submissionId}</p>
+            <p>
+              {submissionText[locale].successPrefix} <strong>{submission.submissionId}</strong>
+            </p>
+            <p>{submissionText[locale].saveCode}</p>
           </div>
         )}
         {submission.status === "error" && <p>{submission.message}</p>}
