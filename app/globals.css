@@ -103,7 +103,7 @@ h1 {
   margin: 14px 0 0;
   font-size: clamp(3rem, 8vw, 7.8rem);
   line-height: 0.82;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.045em;
   text-wrap: balance;
 }
 
@@ -249,6 +249,18 @@ h1 {
 .sd-description,
 .sd-question__description {
   color: var(--ink-soft);
+}
+
+.sd-description {
+  max-width: 680px;
+  font-size: 1rem;
+  letter-spacing: 0.005em;
+  line-height: 1.65;
+}
+
+.sd-question__description {
+  letter-spacing: 0;
+  line-height: 1.55;
 }
 
 .sd-progress,
