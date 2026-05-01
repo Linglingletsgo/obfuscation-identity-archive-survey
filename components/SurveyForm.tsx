@@ -78,22 +78,25 @@ export function SurveyForm() {
 
   return (
     <section className="survey-shell">
-      <div className="language-switch" aria-label="Language switch">
-        {(Object.keys(localeLabels) as Locale[]).map((item) => (
-          <button
-            className={item === locale ? "active" : ""}
-            key={item}
-            onClick={() => setLocale(item)}
-            type="button"
-          >
-            {localeLabels[item]}
-          </button>
-        ))}
+      <div className="survey-toolbar">
+        <p>Choose language / 选择语言</p>
+        <div className="language-switch" aria-label="Language switch">
+          {(Object.keys(localeLabels) as Locale[]).map((item) => (
+            <button
+              className={item === locale ? "active" : ""}
+              key={item}
+              onClick={() => setLocale(item)}
+              type="button"
+            >
+              {localeLabels[item]}
+            </button>
+          ))}
+        </div>
       </div>
 
       <Survey model={survey} />
 
-      <div className={`submission-state ${submission.status}`}>
+      <div className={`submission-state ${submission.status}`} aria-live="polite">
         {submission.status === "idle" && <p>{submissionText[locale].idle}</p>}
         {submission.status === "submitting" && <p>{submissionText[locale].submitting}</p>}
         {submission.status === "success" && (
