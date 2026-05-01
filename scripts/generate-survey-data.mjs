@@ -41,6 +41,26 @@ function choicesForSection(section) {
     .filter((item) => !item.includes("Other:") && !item.includes("其他："));
 }
 
+function selectionDescription(config) {
+  if (config.type !== "checkbox") return undefined;
+
+  if (config.minSelectedChoices && config.maxSelectedChoices) {
+    return {
+      default: `Select ${config.minSelectedChoices}-${config.maxSelectedChoices} options.`,
+      "zh-cn": `请选择 ${config.minSelectedChoices}-${config.maxSelectedChoices} 项。`
+    };
+  }
+
+  if (config.maxSelectedChoices) {
+    return {
+      default: `Select up to ${config.maxSelectedChoices} options.`,
+      "zh-cn": `最多选择 ${config.maxSelectedChoices} 项。`
+    };
+  }
+
+  return undefined;
+}
+
 async function main() {
   const [en, zh] = await Promise.all([fs.readFile(EN_FILE, "utf8"), fs.readFile(ZH_FILE, "utf8")]);
   const questions = QUESTION_CONFIG.map((config) => {
@@ -58,6 +78,7 @@ async function main() {
         default: titleForSection(enSection),
         "zh-cn": titleForSection(zhSection)
       },
+      description: selectionDescription(config),
       choices: enChoices.map((value, index) => ({
         value,
         text: {

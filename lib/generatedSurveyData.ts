@@ -121,6 +121,10 @@ export const generatedQuestionDefinitions = [
       "default": "Q2. Select the places where this identity has appeared",
       "zh-cn": "Q2. 选择这个身份曾经出现的场所"
     },
+    "description": {
+      "default": "Select up to 6 options.",
+      "zh-cn": "最多选择 6 项。"
+    },
     "choices": [
       {
         "value": "Internet",
@@ -264,6 +268,10 @@ export const generatedQuestionDefinitions = [
       "default": "Q3. Select the expression formats used by this identity",
       "zh-cn": "Q3. 选择这个身份使用的表达方式"
     },
+    "description": {
+      "default": "Select up to 5 options.",
+      "zh-cn": "最多选择 5 项。"
+    },
     "choices": [
       {
         "value": "Official form",
@@ -392,6 +400,10 @@ export const generatedQuestionDefinitions = [
     "title": {
       "default": "Q4. Select the material sources of this identity",
       "zh-cn": "Q4. 选择这个身份的材料来源"
+    },
+    "description": {
+      "default": "Select up to 8 options.",
+      "zh-cn": "最多选择 8 项。"
     },
     "choices": [
       {
@@ -543,6 +555,10 @@ export const generatedQuestionDefinitions = [
     "title": {
       "default": "Q5. Social Role Tags",
       "zh-cn": "Q5. 社会角色标签"
+    },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
     },
     "choices": [
       {
@@ -772,6 +788,10 @@ export const generatedQuestionDefinitions = [
       "default": "Q6. Spatial Tags",
       "zh-cn": "Q6. 空间标签"
     },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
+    },
     "choices": [
       {
         "value": "City center",
@@ -999,6 +1019,10 @@ export const generatedQuestionDefinitions = [
     "title": {
       "default": "Q7. Time / Era Tags",
       "zh-cn": "Q7. 时间 / 年代标签"
+    },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
     },
     "choices": [
       {
@@ -1235,6 +1259,10 @@ export const generatedQuestionDefinitions = [
       "default": "Q8. Platform Behavior / Consumption Tags",
       "zh-cn": "Q8. 平台行为 / 消费标签"
     },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
+    },
     "choices": [
       {
         "value": "Impulse buyer",
@@ -1427,6 +1455,10 @@ export const generatedQuestionDefinitions = [
     "title": {
       "default": "Q9. Emotion / Personality Tags",
       "zh-cn": "Q9. 情绪 / 人格标签"
+    },
+    "description": {
+      "default": "Select 4-7 options.",
+      "zh-cn": "请选择 4-7 项。"
     },
     "choices": [
       {
@@ -1642,6 +1674,10 @@ export const generatedQuestionDefinitions = [
       "default": "Q10. Relationship Tags",
       "zh-cn": "Q10. 关系标签"
     },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
+    },
     "choices": [
       {
         "value": "Solitary person",
@@ -1828,6 +1864,10 @@ export const generatedQuestionDefinitions = [
       "default": "Q11. Aesthetic / Cultural Tags",
       "zh-cn": "Q11. 审美 / 文化标签"
     },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
+    },
     "choices": [
       {
         "value": "Pop culture",
@@ -2013,6 +2053,10 @@ export const generatedQuestionDefinitions = [
     "title": {
       "default": "Q12. System Tags",
       "zh-cn": "Q12. 系统标签"
+    },
+    "description": {
+      "default": "Select 3-6 options.",
+      "zh-cn": "请选择 3-6 项。"
     },
     "choices": [
       {
@@ -2227,6 +2271,10 @@ export const generatedQuestionDefinitions = [
     "title": {
       "default": "Q13. Non-human Tags",
       "zh-cn": "Q13. 非人类标签"
+    },
+    "description": {
+      "default": "Select 6-12 options.",
+      "zh-cn": "请选择 6-12 项。"
     },
     "choices": [
       {

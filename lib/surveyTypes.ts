@@ -13,6 +13,7 @@ export type SurveyQuestionDefinition = {
   name: string;
   type: "radiogroup" | "checkbox";
   title: LocaleText;
+  description?: LocaleText;
   choices: SurveyChoice[];
   isRequired?: boolean;
   minSelectedChoices?: number;
