@@ -8,7 +8,10 @@ export default function Home() {
           <p className="eyebrow">Obfuscation Identity Archive</p>
           <h1>Assemble an identity that refuses clean prediction.</h1>
           <p>
-            Combine unstable tags, false routes, non-human traces, and one carried fragment into an anonymous archive entry.
+            This questionnaire asks you to assemble an obfuscated version of your own identity. You may use real, fictional,
+            misleading, contradictory, or non-human elements.
+            <br />
+            这份问卷邀请你组装一个关于“你自己身份”的混淆版本。你可以使用真实、虚构、误导性、矛盾或非人类元素。
           </p>
         </div>
         <div className="hero-side">
