@@ -11,7 +11,7 @@ export default function Home() {
             This questionnaire asks you to assemble an obfuscated version of your own identity. You may use real, fictional,
             misleading, contradictory, or non-human elements.
             <br />
-            这份问卷邀请你组装一个关于“你自己身份”的混淆版本。你可以使用真实、虚构、误导性、矛盾或非人类元素。
+            这份问卷邀请你组装一个关于你自己身份的混淆版本。你可以使用真实、虚构、误导性、矛盾或非人类元素。
           </p>
         </div>
         <div className="hero-side">
