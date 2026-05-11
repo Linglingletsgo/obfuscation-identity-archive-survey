@@ -682,7 +682,10 @@ h1 {
 
   .project-intro,
   .policy-note {
-    padding: 34px 26px;
+    width: calc(100% + 24px);
+    margin-inline: -12px;
+    background-size: 100% 100%;
+    padding: 52px 42px;
   }
 
   .hero-card {
@@ -747,7 +750,9 @@ h1 {
 
   .project-intro,
   .policy-note {
-    padding: 30px 22px;
+    width: calc(100% + 16px);
+    margin-inline: -8px;
+    padding: 46px 34px;
   }
 
   .hero-card {
