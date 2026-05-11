@@ -24,7 +24,7 @@ const content: Record<
 > = {
   default: {
     htmlLang: "en",
-    title: "Assemble an identity that refuses clean prediction.",
+    title: "Obfuscation Identity Archive",
     introHeading: "Project Introduction",
     intro: [
       "Today, human experience is increasingly recorded as data. Social platforms, smart devices, recommendation systems, and data brokers collect traces of what we click, buy, desire, avoid, feel, repeat, and withhold. These traces are used to classify us, predict us, and shape what we may become.",
@@ -50,7 +50,7 @@ const content: Record<
   },
   "zh-cn": {
     htmlLang: "zh-CN",
-    title: "组装一个拒绝被清晰预测的身份。",
+    title: "Obfuscation Identity Archive",
     introHeading: "项目简介",
     intro: [
       "在当下，人类经验正越来越多地被记录为数据。社交平台、智能设备、推荐系统和数据经纪产业持续收集我们点击、购买、渴望、回避、感受、重复以及隐瞒的痕迹。这些痕迹被用来分类我们、预测我们，并塑造我们可能成为什么样的人。",
@@ -82,20 +82,21 @@ export function HomeContent() {
 
   return (
     <main lang={current.htmlLang}>
-      <div className="global-toolbar">
-        <p className="eyebrow">Obfuscation Identity Archive</p>
-        <div className="language-switch" aria-label="Language switch">
-          {(Object.keys(localeLabels) as Locale[]).map((item) => (
-            <button className={item === locale ? "active" : ""} key={item} onClick={() => setLocale(item)} type="button">
-              {localeLabels[item]}
-            </button>
-          ))}
+      <div className="hero-top">
+        <h1>{current.title}</h1>
+        <div className="global-toolbar">
+          <div className="language-switch" aria-label="Language switch">
+            {(Object.keys(localeLabels) as Locale[]).map((item) => (
+              <button className={item === locale ? "active" : ""} key={item} onClick={() => setLocale(item)} type="button">
+                {localeLabels[item]}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       <section className="hero">
         <div className="hero-copy">
-          <h1>{current.title}</h1>
           <article className="project-intro" aria-label={current.introHeading}>
             <h2>{current.introHeading}</h2>
             {current.intro.map((paragraph) => (

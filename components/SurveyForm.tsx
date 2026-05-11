@@ -16,20 +16,17 @@ type SubmissionState =
 const submissionText: Record<
   Locale,
   {
-    idle: string;
     submitting: string;
     successPrefix: string;
     saveCode: string;
   }
 > = {
   default: {
-    idle: "Complete the archive form, then submit your obfuscated identity.",
     submitting: "Sealing and submitting the archive entry...",
     successPrefix: "Submission ID:",
     saveCode: "Save this submission ID. It is the only identifier shown for your archive entry."
   },
   "zh-cn": {
-    idle: "请完成档案表单，然后提交你的混淆身份。",
     submitting: "正在封存并提交档案条目...",
     successPrefix: "Submission ID：",
     saveCode: "请保存这个 submission ID。这是之后识别该档案条目的唯一编码。"
@@ -76,21 +73,28 @@ export function SurveyForm({ locale }: SurveyFormProps) {
 
   return (
     <section className="survey-shell">
+      <span className="survey-border-layer" aria-hidden="true">
+        <span className="survey-border survey-border-top" />
+        <span className="survey-border survey-border-right" />
+        <span className="survey-border survey-border-bottom" />
+        <span className="survey-border survey-border-left" />
+      </span>
       <Survey model={survey} />
 
-      <div className={`submission-state ${submission.status}`} aria-live="polite">
-        {submission.status === "idle" && <p>{submissionText[locale].idle}</p>}
-        {submission.status === "submitting" && <p>{submissionText[locale].submitting}</p>}
-        {submission.status === "success" && (
-          <div>
-            <p>
-              {submissionText[locale].successPrefix} <strong>{submission.submissionId}</strong>
-            </p>
-            <p>{submissionText[locale].saveCode}</p>
-          </div>
-        )}
-        {submission.status === "error" && <p>{submission.message}</p>}
-      </div>
+      {submission.status !== "idle" && (
+        <div className={`submission-state ${submission.status}`} aria-live="polite">
+          {submission.status === "submitting" && <p>{submissionText[locale].submitting}</p>}
+          {submission.status === "success" && (
+            <div>
+              <p>
+                {submissionText[locale].successPrefix} <strong>{submission.submissionId}</strong>
+              </p>
+              <p>{submissionText[locale].saveCode}</p>
+            </div>
+          )}
+          {submission.status === "error" && <p>{submission.message}</p>}
+        </div>
+      )}
     </section>
   );
 }

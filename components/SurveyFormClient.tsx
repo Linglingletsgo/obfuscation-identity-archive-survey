@@ -9,6 +9,12 @@ export const SurveyFormClient = dynamic<{ locale: Locale }>(
     ssr: false,
     loading: () => (
       <section className="survey-shell survey-loading">
+        <span className="survey-border-layer" aria-hidden="true">
+          <span className="survey-border survey-border-top" />
+          <span className="survey-border survey-border-right" />
+          <span className="survey-border survey-border-bottom" />
+          <span className="survey-border survey-border-left" />
+        </span>
         Preparing the archive form...
       </section>
     ),
