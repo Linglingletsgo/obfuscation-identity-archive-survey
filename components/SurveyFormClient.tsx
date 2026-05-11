@@ -1,9 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { Locale } from "./SurveyForm";
+import type { SurveyFormProps } from "./SurveyForm";
 
-export const SurveyFormClient = dynamic<{ locale: Locale }>(
+export const SurveyFormClient = dynamic<SurveyFormProps>(
   () => import("./SurveyForm").then((module) => module.SurveyForm),
   {
     ssr: false,

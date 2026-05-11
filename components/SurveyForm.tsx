@@ -1,7 +1,7 @@
 "use client";
 
 import "survey-core/survey-core.min.css";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import { createSurveyJson } from "@/lib/surveySchema";
@@ -33,11 +33,12 @@ const submissionText: Record<
   }
 };
 
-type SurveyFormProps = {
+export type SurveyFormProps = {
   locale: Locale;
+  onPageIndexChange?: (pageIndex: number) => void;
 };
 
-export function SurveyForm({ locale }: SurveyFormProps) {
+export function SurveyForm({ locale, onPageIndexChange }: SurveyFormProps) {
   const [submission, setSubmission] = useState<SubmissionState>({ status: "idle" });
   const survey = useMemo(() => {
     const model = new Model(createSurveyJson());
@@ -70,6 +71,18 @@ export function SurveyForm({ locale }: SurveyFormProps) {
     });
     return model;
   }, [locale]);
+
+  useEffect(() => {
+    onPageIndexChange?.(survey.currentPageNo);
+    const syncPageIndex = (sender: Model) => {
+      onPageIndexChange?.(sender.currentPageNo);
+    };
+    survey.onCurrentPageChanged.add(syncPageIndex);
+
+    return () => {
+      survey.onCurrentPageChanged.remove(syncPageIndex);
+    };
+  }, [onPageIndexChange, survey]);
 
   return (
     <section className="survey-shell">

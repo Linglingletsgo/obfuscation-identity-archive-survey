@@ -78,53 +78,59 @@ const content: Record<
 
 export function HomeContent() {
   const [locale, setLocale] = useState<Locale>("default");
+  const [surveyPageIndex, setSurveyPageIndex] = useState(0);
   const current = content[locale];
+  const showIntro = surveyPageIndex === 0;
 
   return (
     <main lang={current.htmlLang}>
-      <div className="hero-top">
-        <h1>{current.title}</h1>
-        <div className="global-toolbar">
-          <div className="language-switch" aria-label="Language switch">
-            {(Object.keys(localeLabels) as Locale[]).map((item) => (
-              <button className={item === locale ? "active" : ""} key={item} onClick={() => setLocale(item)} type="button">
-                {localeLabels[item]}
-              </button>
-            ))}
+      {showIntro && (
+        <div className="hero-top">
+          <h1>{current.title}</h1>
+          <div className="global-toolbar">
+            <div className="language-switch" aria-label="Language switch">
+              {(Object.keys(localeLabels) as Locale[]).map((item) => (
+                <button className={item === locale ? "active" : ""} key={item} onClick={() => setLocale(item)} type="button">
+                  {localeLabels[item]}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      <section className="hero">
-        <div className="hero-copy">
-          <article className="project-intro" aria-label={current.introHeading}>
-            <h2>{current.introHeading}</h2>
-            {current.intro.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </article>
-        </div>
-        <div className="hero-side">
-          <aside className="hero-card" aria-label={current.protocolTitle}>
-            <p className="card-kicker">{current.protocolTitle}</p>
-            <ul>
-              {current.protocolItems.map((item) => (
-                <li key={item}>{item}</li>
+      {showIntro && (
+        <section className="hero">
+          <div className="hero-copy">
+            <article className="project-intro" aria-label={current.introHeading}>
+              <h2>{current.introHeading}</h2>
+              {current.intro.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
               ))}
-            </ul>
-          </aside>
-          <aside className="hero-card" aria-label={current.structureTitle}>
-            <p className="card-kicker">{current.structureTitle}</p>
-            <ul>
-              {current.structureItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </aside>
-        </div>
-      </section>
+            </article>
+          </div>
+          <div className="hero-side">
+            <aside className="hero-card" aria-label={current.protocolTitle}>
+              <p className="card-kicker">{current.protocolTitle}</p>
+              <ul>
+                {current.protocolItems.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </aside>
+            <aside className="hero-card" aria-label={current.structureTitle}>
+              <p className="card-kicker">{current.structureTitle}</p>
+              <ul>
+                {current.structureItems.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </aside>
+          </div>
+        </section>
+      )}
 
-      <SurveyFormClient locale={locale} />
+      <SurveyFormClient locale={locale} onPageIndexChange={setSurveyPageIndex} />
     </main>
   );
 }
