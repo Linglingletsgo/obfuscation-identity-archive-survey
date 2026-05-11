@@ -680,12 +680,18 @@ h1 {
     padding: 8px 10px;
   }
 
-  .project-intro,
-  .policy-note {
+  .project-intro {
     width: calc(100% + 24px);
     margin-inline: -12px;
     background-size: 100% 100%;
-    padding: 52px 42px;
+    padding: 70px 42px;
+  }
+
+  .policy-note {
+    width: calc(100% + 40px);
+    margin-inline: -20px;
+    background-size: 100% 100%;
+    padding: 64px 52px;
   }
 
   .hero-card {
@@ -748,11 +754,16 @@ h1 {
     border-radius: 18px;
   }
 
-  .project-intro,
-  .policy-note {
+  .project-intro {
     width: calc(100% + 16px);
     margin-inline: -8px;
-    padding: 46px 34px;
+    padding: 62px 34px;
+  }
+
+  .policy-note {
+    width: calc(100% + 28px);
+    margin-inline: -14px;
+    padding: 58px 42px;
   }
 
   .hero-card {
