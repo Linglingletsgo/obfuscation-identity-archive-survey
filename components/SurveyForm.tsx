@@ -6,17 +6,12 @@ import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import { createSurveyJson } from "@/lib/surveySchema";
 
-type Locale = "default" | "zh-cn";
+export type Locale = "default" | "zh-cn";
 type SubmissionState =
   | { status: "idle" }
   | { status: "submitting" }
   | { status: "success"; submissionId: string }
   | { status: "error"; message: string };
-
-const localeLabels: Record<Locale, string> = {
-  default: "English",
-  "zh-cn": "中文"
-};
 
 const submissionText: Record<
   Locale,
@@ -41,8 +36,11 @@ const submissionText: Record<
   }
 };
 
-export function SurveyForm() {
-  const [locale, setLocale] = useState<Locale>("default");
+type SurveyFormProps = {
+  locale: Locale;
+};
+
+export function SurveyForm({ locale }: SurveyFormProps) {
   const [submission, setSubmission] = useState<SubmissionState>({ status: "idle" });
   const survey = useMemo(() => {
     const model = new Model(createSurveyJson());
@@ -78,22 +76,6 @@ export function SurveyForm() {
 
   return (
     <section className="survey-shell">
-      <div className="survey-toolbar">
-        <p>Language / 语言</p>
-        <div className="language-switch" aria-label="Language switch">
-          {(Object.keys(localeLabels) as Locale[]).map((item) => (
-            <button
-              className={item === locale ? "active" : ""}
-              key={item}
-              onClick={() => setLocale(item)}
-              type="button"
-            >
-              {localeLabels[item]}
-            </button>
-          ))}
-        </div>
-      </div>
-
       <Survey model={survey} />
 
       <div className={`submission-state ${submission.status}`} aria-live="polite">
