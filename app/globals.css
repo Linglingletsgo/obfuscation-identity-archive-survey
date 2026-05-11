@@ -688,10 +688,17 @@ h1 {
   }
 
   .policy-note {
-    width: calc(100% + 40px);
-    margin-inline: -20px;
+    width: calc(100% + 64px);
+    margin-inline: -32px;
     background-size: 100% 100%;
-    padding: 64px 52px;
+    padding: 72px 58px 86px;
+  }
+
+  .policy-note h3 {
+    font-size: 0.78rem;
+    line-height: 1.08;
+    margin-bottom: 24px;
+    max-width: min(100%, 360px);
   }
 
   .hero-card {
@@ -704,7 +711,7 @@ h1 {
   }
 
   .survey-border-layer {
-    inset: -10px;
+    inset: -12px -24px;
   }
 
   .survey-border-top,
@@ -714,7 +721,15 @@ h1 {
 
   .survey-border-left,
   .survey-border-right {
-    width: 48px;
+    width: 56px;
+  }
+
+  .survey-border-left {
+    transform: translateX(-28%);
+  }
+
+  .survey-border-right {
+    transform: translateX(28%) scaleX(-1);
   }
 
   .sd-root-modern {
@@ -761,9 +776,14 @@ h1 {
   }
 
   .policy-note {
-    width: calc(100% + 28px);
-    margin-inline: -14px;
-    padding: 58px 42px;
+    width: calc(100% + 48px);
+    margin-inline: -24px;
+    padding: 66px 48px 82px;
+  }
+
+  .policy-note h3 {
+    font-size: 0.72rem;
+    margin-bottom: 26px;
   }
 
   .hero-card {
