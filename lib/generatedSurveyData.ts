@@ -3104,20 +3104,6 @@ export const generatedQuestionDefinitions = [
         }
       },
       {
-        "value": "A mass of fog",
-        "text": {
-          "default": "A mass of fog",
-          "zh-cn": "一团雾"
-        }
-      },
-      {
-        "value": "A gust of wind",
-        "text": {
-          "default": "A gust of wind",
-          "zh-cn": "一阵风"
-        }
-      },
-      {
         "value": "An eye",
         "text": {
           "default": "An eye",
