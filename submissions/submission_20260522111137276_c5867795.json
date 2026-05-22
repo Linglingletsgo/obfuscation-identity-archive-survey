@@ -1,0 +1,78 @@
+{
+  "submission_id": "submission_20260522111137276_c5867795",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-05-22T11:11:37.276Z",
+  "shell_form": "Dream figure",
+  "places": [
+    "No fixed place"
+  ],
+  "expression_formats": [
+    "Poem",
+    "Private diary",
+    "Untitled file"
+  ],
+  "material_sources": [
+    "Dream",
+    "Real memory",
+    "Color",
+    "Non-human material",
+    "Lyric-like fragment"
+  ],
+  "social_role_tags": [
+    "Unclassifiable person",
+    "Traveler",
+    "New resident",
+    "Caregiver"
+  ],
+  "spatial_tags": [
+    "Forest",
+    "Village",
+    "No fixed place"
+  ],
+  "time_era_tags": [
+    "Mythic age",
+    "Expired future",
+    "Nocturnal",
+    "Active at dawn"
+  ],
+  "platform_behavior_tags": [
+    "Anti-recommendation user",
+    "Anonymous browser",
+    "Second-hand preference"
+  ],
+  "emotion_personality_tags": [
+    "Calm",
+    "Anxious",
+    "Warm",
+    "Highly expressive",
+    "Optimistic"
+  ],
+  "relationship_tags": [
+    "Community organizer",
+    "Old friend",
+    "Marginal group member"
+  ],
+  "aesthetic_cultural_tags": [
+    "Unclassifiable",
+    "Nostalgia",
+    "Handmade feeling"
+  ],
+  "system_tags": [
+    "Unstable user",
+    "Algorithmic anomaly",
+    "Blurred profile"
+  ],
+  "non_human_tags": [
+    "Coral",
+    "Wind",
+    "Moon",
+    "Cloth",
+    "White noise",
+    "Simulated life"
+  ],
+  "identity_name": "OUCH",
+  "carried_fragment": "CREATING COMMUNITY WITH NEW STRUCTURES",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
