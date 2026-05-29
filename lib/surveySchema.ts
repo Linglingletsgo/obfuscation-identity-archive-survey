@@ -31,8 +31,8 @@ export function createSurveyJson() {
       "zh-cn": "混淆身份档案"
     },
     description: {
-      default: "A privacy questionnaire for assembling an obfuscation identity archive.",
-      "zh-cn": "一份用于组装混淆身份档案的隐私问卷。"
+      default: "A privacy-conscious archive entry process for assembling an obfuscation identity.",
+      "zh-cn": "一个用于组装混淆身份的隐私友好档案化入口。"
     },
     showProgressBar: "top",
     progressBarType: "pages",
@@ -58,9 +58,9 @@ export function createSurveyJson() {
             name: "intro_text",
             html: {
               default:
-                "<div class=\"policy-note\"><h3>Use scope and privacy notice</h3><p>This questionnaire is fully anonymous.</p><p>Please do not enter directly identifiable information, including legal names, addresses, phone numbers, email addresses, account handles, ID numbers, or other information that can directly identify you or another person.</p><p>You may mix real memories, fictional details, dreams, metaphors, false memories, nonsense, private codes, random content, platform-style labels, non-human identities, imagined eras, or any other materials.</p><p>Your submission will be converted into a project-compatible JSON record and stored in the project GitHub submissions repository for artistic research, dataset testing, visualization, avatar-map generation, and related project documentation. This archive is not confidential storage.</p><p>By continuing, you agree that the submitted material may be processed, reorganized, visualized, and machine-interpreted within this project. You may use fictional, misleading, contradictory, or obfuscated answers.</p><p><strong>After submission, save the submission ID.</strong> It is the only code shown to you for identifying your submitted record later.</p></div>",
+                "<div class=\"policy-note\"><h3>Use scope and privacy notice</h3><p>This archive entry process is fully anonymous.</p><p>Please do not enter directly identifiable information, including legal names, addresses, phone numbers, email addresses, account handles, ID numbers, or other information that can directly identify you or another person.</p><p>You may mix real memories, fictional details, dreams, metaphors, false memories, nonsense, private codes, random content, platform-style labels, non-human identities, imagined eras, or any other materials.</p><p>Your archive entry will be stored in the <a href=\"https://github.com/Linglingletsgo/obfuscation-identity-archive-survey\" target=\"_blank\" rel=\"noreferrer\">repository</a> and automatically archived into <a href=\"https://archive.dominicduan.com/\" target=\"_blank\" rel=\"noreferrer\">Obfuscation Identity Archive</a> for artistic research, dataset testing, visualization, avatar-map generation, and related project documentation. This archive is not confidential storage.</p><p>By continuing, you agree that the submitted material may be processed, reorganized, visualized, and machine-interpreted within this project. You may use fictional, misleading, contradictory, or obfuscated fragments.</p><p><strong>After submission, save the submission ID.</strong> It is the archive key shown to you for identifying your submitted entry later.</p></div>",
               "zh-cn":
-                "<div class=\"policy-note\"><h3>使用范围与隐私说明</h3><p>本问卷完全匿名。</p><p>请不要填写可直接识别个人身份的信息，包括真实姓名、地址、电话号码、邮箱、账号、证件号码，或任何能够直接识别你或他人的信息。</p><p>你可以混合真实记忆、虚构细节、梦境、隐喻、虚假记忆、无意义内容、私人暗号、随机内容、平台式标签、非人类身份、想象年代或任何其他材料。</p><p>你的提交会被转换为项目兼容的 JSON 记录，并保存到项目 GitHub submissions 仓库中，用于艺术研究、数据集测试、可视化、avatar-map 生成及相关项目文档。本档案不是保密存储空间。</p><p>继续填写即表示你同意提交内容可在本项目中被处理、重组、可视化和机器解释。你可以使用虚构、误导性、矛盾或混淆化的答案。</p><p><strong>提交完成后，请保存 submission ID。</strong> 这是之后识别你提交记录的唯一编码。</p></div>"
+                "<div class=\"policy-note\"><h3>使用范围与隐私说明</h3><p>这个档案化入口完全匿名。</p><p>请不要填写可直接识别个人身份的信息，包括真实姓名、地址、电话号码、邮箱、账号、证件号码，或任何能够直接识别你或他人的信息。</p><p>你可以混合真实记忆、虚构细节、梦境、隐喻、虚假记忆、无意义内容、私人暗号、随机内容、平台式标签、非人类身份、想象年代或任何其他材料。</p><p>你的档案条目会被保存到 <a href=\"https://github.com/Linglingletsgo/obfuscation-identity-archive-survey\" target=\"_blank\" rel=\"noreferrer\">repository</a>，并自动归档到 <a href=\"https://archive.dominicduan.com/\" target=\"_blank\" rel=\"noreferrer\">Obfuscation Identity Archive</a>，用于艺术研究、数据集测试、可视化、avatar-map 生成及相关项目文档。本档案不是保密存储空间。</p><p>继续提交即表示你同意提交内容可在本项目中被处理、重组、可视化和机器解释。你可以使用虚构、误导性、矛盾或混淆化的档案片段。</p><p><strong>提交完成后，请保存 submission ID。</strong> 这是之后识别你提交档案条目的 archive key。</p></div>"
             }
           }
         ]
@@ -131,8 +131,8 @@ export function createSurveyJson() {
             name: "consent_agreement",
             isRequired: true,
             title: {
-              default: "Q16. Do you agree to the data-use scope stated at the beginning of this questionnaire?",
-              "zh-cn": "Q16. 您是否同意本问卷开头所述的数据使用范围？"
+              default: "Q16. Do you agree to the data-use scope stated at the beginning of this archive entry process?",
+              "zh-cn": "Q16. 您是否同意这个档案化入口开头所述的数据使用范围？"
             },
             choices: [
               {

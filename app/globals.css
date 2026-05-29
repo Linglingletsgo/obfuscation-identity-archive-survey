@@ -608,9 +608,9 @@ h1 {
 }
 
 .submission-state.success {
-  color: #2b4366;
+  color: var(--rust-dark);
   background:
-    repeating-linear-gradient(-8deg, rgba(87, 117, 166, 0.16) 0 6px, transparent 6px 14px),
+    repeating-linear-gradient(-8deg, rgba(207, 50, 32, 0.16) 0 6px, transparent 6px 14px),
     #fffdf8;
 }
 

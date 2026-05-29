@@ -24,12 +24,12 @@ const submissionText: Record<
   default: {
     submitting: "Sealing and submitting the archive entry...",
     successPrefix: "Submission ID:",
-    saveCode: "Save this submission ID. It is the only identifier shown for your archive entry."
+    saveCode: "Save this submission ID. It is the archive key for this entry."
   },
   "zh-cn": {
     submitting: "正在封存并提交档案条目...",
     successPrefix: "Submission ID：",
-    saveCode: "请保存这个 submission ID。这是之后识别该档案条目的唯一编码。"
+    saveCode: "请保存这个 submission ID。这是这个档案条目的 archive key。"
   }
 };
 

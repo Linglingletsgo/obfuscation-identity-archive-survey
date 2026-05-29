@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   try {
     const body = (await request.json()) as { data?: Record<string, unknown> };
     if (!body.data || typeof body.data !== "object") {
-      return Response.json({ error: "Missing survey data." }, { status: 400 });
+      return Response.json({ error: "Missing archive entry data." }, { status: 400 });
     }
 
     const record = transformSurveyResult(body.data);

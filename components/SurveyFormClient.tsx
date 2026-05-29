@@ -15,7 +15,7 @@ export const SurveyFormClient = dynamic<SurveyFormProps>(
           <span className="survey-border survey-border-bottom" />
           <span className="survey-border survey-border-left" />
         </span>
-        Preparing the archive form...
+        Preparing the archive entry...
       </section>
     ),
   },
