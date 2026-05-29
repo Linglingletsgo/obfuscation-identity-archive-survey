@@ -33,17 +33,17 @@
 :root {
   --ink: #17120f;
   --ink-soft: #54473f;
-  --paper: #fffdf8;
+  --paper: #f4f6f8;
   --surface: #fffaf0;
   --surface-muted: #fff3c8;
   --charcoal: #17120f;
-  --rust: #e34835;
-  --rust-dark: #bd2d23;
-  --verdigris: #1f9d75;
-  --signal: #f5c842;
-  --sky: #5aa9ff;
-  --leaf: #54c45e;
-  --pink: #ff7aaa;
+  --rust: #CF3220;
+  --rust-dark: #b02315;
+  --verdigris: #5775A6;
+  --signal: #CF3220;
+  --sky: #5775A6;
+  --leaf: #5775A6;
+  --pink: #CF3220;
   --line: #17120f;
   --line-strong: #17120f;
   --title-font: "Tajamuka Script", "Bradley Hand", cursive;
@@ -60,6 +60,7 @@
   --asset-language-switch: url("/survey-ui/language_switch_frame.png");
   --asset-survey-border-horizontal: url("/survey-ui/survey_border_horizontal.png");
   --asset-survey-border-vertical: url("/survey-ui/survey_border_vertical.png");
+  --asset-node: url("/survey-ui/node.png");
 }
 
 * {
@@ -76,13 +77,10 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 11% 13%, rgba(245, 200, 66, 0.28) 0 2px, transparent 3px),
-    radial-gradient(circle at 82% 18%, rgba(90, 169, 255, 0.24) 0 2px, transparent 3px),
-    radial-gradient(circle at 24% 78%, rgba(255, 122, 170, 0.22) 0 2px, transparent 3px),
-    linear-gradient(90deg, rgba(23, 18, 15, 0.035) 1px, transparent 1px),
-    linear-gradient(rgba(23, 18, 15, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 114, 128, 0.15) 1px, transparent 1px),
+    linear-gradient(rgba(107, 114, 128, 0.15) 1px, transparent 1px),
     var(--paper);
-  background-size: auto, auto, 34px 34px, 34px 34px, auto;
+  background-size: 34px 34px, 34px 34px;
   font-family: var(--serif);
 }
 
@@ -90,7 +88,6 @@ main:lang(zh-CN) {
   font-family: var(--zh-font);
 }
 
-main:lang(zh-CN) h1,
 main:lang(zh-CN) .project-intro h2,
 main:lang(zh-CN) .card-kicker,
 main:lang(zh-CN) .language-switch button,
@@ -114,9 +111,9 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(103deg, transparent 0 18%, rgba(227, 72, 53, 0.1) 18.2% 19.2%, transparent 19.4%),
-    linear-gradient(74deg, transparent 0 62%, rgba(31, 157, 117, 0.12) 62.2% 63.1%, transparent 63.4%),
-    linear-gradient(13deg, transparent 0 40%, rgba(90, 169, 255, 0.1) 40.2% 41.3%, transparent 41.5%);
+    linear-gradient(103deg, transparent 0 18%, rgba(207, 50, 32, 0.1) 18.2% 19.2%, transparent 19.4%),
+    linear-gradient(74deg, transparent 0 62%, rgba(87, 117, 166, 0.12) 62.2% 63.1%, transparent 63.4%),
+    linear-gradient(13deg, transparent 0 40%, rgba(87, 117, 166, 0.1) 40.2% 41.3%, transparent 41.5%);
   content: "";
 }
 
@@ -198,8 +195,8 @@ h1 {
   letter-spacing: 0.01em;
   line-height: 0.9;
   text-shadow:
-    3px 3px 0 #fff176,
-    6px 6px 0 rgba(227, 72, 53, 0.45);
+    3px 3px 0 rgba(87, 117, 166, 0.85),
+    6px 6px 0 rgba(207, 50, 32, 0.85);
   text-wrap: balance;
   transform: rotate(-1.15deg);
 }
@@ -300,15 +297,12 @@ h1 {
 
 .hero-card li::before {
   position: absolute;
-  top: 0.5em;
+  top: 0.22em;
   left: 0;
-  width: 14px;
-  height: 10px;
-  border: 3px solid var(--line);
-  border-radius: 55% 45% 50% 40%;
-  background: var(--signal);
+  width: 16px;
+  height: 16px;
+  background: var(--asset-node) center / contain no-repeat;
   content: "";
-  transform: rotate(-12deg);
 }
 
 .language-switch {
@@ -342,7 +336,7 @@ h1 {
 }
 
 .language-switch button:hover {
-  background: #ffe984;
+  background: rgba(87, 117, 166, 0.15);
   transform: rotate(-2deg) scale(1.04);
 }
 
@@ -454,7 +448,7 @@ h1 {
 .sd-title {
   font-size: clamp(1.8rem, 3vw, 2.7rem);
   letter-spacing: -0.03em;
-  text-shadow: 2px 2px 0 #fff176;
+  text-shadow: 2px 2px 0 rgba(207, 50, 32, 0.5);
 }
 
 .sd-description,
@@ -614,9 +608,9 @@ h1 {
 }
 
 .submission-state.success {
-  color: #146b4f;
+  color: #2b4366;
   background:
-    repeating-linear-gradient(-8deg, rgba(84, 196, 94, 0.16) 0 6px, transparent 6px 14px),
+    repeating-linear-gradient(-8deg, rgba(87, 117, 166, 0.16) 0 6px, transparent 6px 14px),
     #fffdf8;
 }
 
@@ -625,8 +619,8 @@ h1 {
   margin-top: 4px;
   border: 3px solid var(--line);
   border-radius: 15px 10px 17px 11px;
-  background: #dfff8c;
-  color: var(--charcoal);
+  background: #d9e2f0;
+  color: #2b4366;
   font-family: var(--mono);
   font-weight: 900;
   padding: 6px 10px;
@@ -635,7 +629,7 @@ h1 {
 .submission-state.error {
   color: var(--rust-dark);
   background:
-    repeating-linear-gradient(8deg, rgba(227, 72, 53, 0.14) 0 6px, transparent 6px 14px),
+    repeating-linear-gradient(8deg, rgba(207, 50, 32, 0.14) 0 6px, transparent 6px 14px),
     #fffdf8;
 }
 
