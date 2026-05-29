@@ -41,6 +41,10 @@ export function createSurveyJson() {
       default: "Submit archive",
       "zh-cn": "提交档案"
     },
+    completedHtml: {
+      default: "<h3>Your obfuscation identity has been archived</h3>",
+      "zh-cn": "<h3>你的混淆身份已被归档</h3>"
+    },
     pages: [
       {
         name: "intro",

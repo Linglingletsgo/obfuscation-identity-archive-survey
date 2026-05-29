@@ -33,6 +33,12 @@ const submissionText: Record<
   }
 };
 
+function isCompletionPreview() {
+  if (process.env.NODE_ENV !== "development") return false;
+  if (typeof window === "undefined") return false;
+  return new URLSearchParams(window.location.search).has("complete");
+}
+
 export type SurveyFormProps = {
   locale: Locale;
   onPageIndexChange?: (pageIndex: number) => void;
@@ -44,6 +50,10 @@ export function SurveyForm({ locale, onPageIndexChange }: SurveyFormProps) {
     const model = new Model(createSurveyJson());
     model.locale = locale;
     model.onComplete.add(async (sender) => {
+      if (isCompletionPreview()) {
+        setSubmission({ status: "success", submissionId: "debug-preview" });
+        return;
+      }
       setSubmission({ status: "submitting" });
       try {
         const response = await fetch("/api/submit", {
@@ -71,6 +81,11 @@ export function SurveyForm({ locale, onPageIndexChange }: SurveyFormProps) {
     });
     return model;
   }, [locale]);
+
+  useEffect(() => {
+    if (!isCompletionPreview()) return;
+    survey.doComplete();
+  }, [survey]);
 
   useEffect(() => {
     onPageIndexChange?.(survey.currentPageNo);
