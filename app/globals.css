@@ -60,7 +60,7 @@
   --asset-language-switch: url("/survey-ui/language_switch_frame.png");
   --asset-survey-border-horizontal: url("/survey-ui/survey_border_horizontal.png");
   --asset-survey-border-vertical: url("/survey-ui/survey_border_vertical.png");
-  --asset-node: url("/survey-ui/node.png");
+  --asset-node: url("/survey-ui/node-tag.png");
 }
 
 * {
