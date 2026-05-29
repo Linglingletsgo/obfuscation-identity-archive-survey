@@ -78,9 +78,10 @@ const content: Record<
 
 export function HomeContent() {
   const [locale, setLocale] = useState<Locale>("default");
+  const [surveyComplete, setSurveyComplete] = useState(false);
   const [surveyPageIndex, setSurveyPageIndex] = useState(0);
   const current = content[locale];
-  const showIntro = surveyPageIndex === 0;
+  const showIntro = surveyPageIndex === 0 && !surveyComplete;
 
   return (
     <main lang={current.htmlLang}>
@@ -130,7 +131,11 @@ export function HomeContent() {
         </section>
       )}
 
-      <SurveyFormClient locale={locale} onPageIndexChange={setSurveyPageIndex} />
+      <SurveyFormClient
+        locale={locale}
+        onCompletionChange={setSurveyComplete}
+        onPageIndexChange={setSurveyPageIndex}
+      />
     </main>
   );
 }

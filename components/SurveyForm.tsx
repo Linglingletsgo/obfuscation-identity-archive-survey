@@ -41,15 +41,17 @@ function isCompletionPreview() {
 
 export type SurveyFormProps = {
   locale: Locale;
+  onCompletionChange?: (isComplete: boolean) => void;
   onPageIndexChange?: (pageIndex: number) => void;
 };
 
-export function SurveyForm({ locale, onPageIndexChange }: SurveyFormProps) {
+export function SurveyForm({ locale, onCompletionChange, onPageIndexChange }: SurveyFormProps) {
   const [submission, setSubmission] = useState<SubmissionState>({ status: "idle" });
   const survey = useMemo(() => {
     const model = new Model(createSurveyJson());
     model.locale = locale;
     model.onComplete.add(async (sender) => {
+      onCompletionChange?.(true);
       if (isCompletionPreview()) {
         setSubmission({ status: "success", submissionId: "debug-preview" });
         return;
@@ -80,7 +82,7 @@ export function SurveyForm({ locale, onPageIndexChange }: SurveyFormProps) {
       }
     });
     return model;
-  }, [locale]);
+  }, [locale, onCompletionChange]);
 
   useEffect(() => {
     if (!isCompletionPreview()) return;
