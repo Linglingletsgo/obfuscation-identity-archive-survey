@@ -99,7 +99,7 @@ export function SurveyForm({ locale, onCompletionChange, onPageIndexChange }: Su
     return () => {
       survey.onCurrentPageChanged.remove(syncPageIndex);
     };
-  }, [onPageIndexChange, survey]);
+  }, [onCompletionChange, onPageIndexChange, survey]);
 
   return (
     <section className="survey-shell">
