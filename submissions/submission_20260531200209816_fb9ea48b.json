@@ -1,0 +1,84 @@
+{
+  "submission_id": "submission_20260531200209816_fb9ea48b",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-05-31T20:02:09.816Z",
+  "shell_form": "Real self",
+  "places": [
+    "Workplace",
+    "Internet",
+    "Archive"
+  ],
+  "expression_formats": [
+    "Social media bio",
+    "Official form",
+    "Resume"
+  ],
+  "material_sources": [
+    "Real memory"
+  ],
+  "social_role_tags": [
+    "Observer",
+    "Unemployed person",
+    "Researcher",
+    "Student"
+  ],
+  "spatial_tags": [
+    "City center",
+    "Seaside",
+    "Airport",
+    "School",
+    "Game world"
+  ],
+  "time_era_tags": [
+    "Millennium",
+    "2020s",
+    "Active at dawn"
+  ],
+  "platform_behavior_tags": [
+    "Minimalist",
+    "Ad avoider",
+    "Membership user",
+    "Multiple-account switcher"
+  ],
+  "emotion_personality_tags": [
+    "Calm",
+    "Anxious",
+    "Gentle",
+    "Optimistic",
+    "Cautious"
+  ],
+  "relationship_tags": [
+    "Socially active",
+    "Keeps distance",
+    "Replies frequently",
+    "Cared-for person",
+    "Family-oriented"
+  ],
+  "aesthetic_cultural_tags": [
+    "Minimalism",
+    "Futurism",
+    "Academic style",
+    "Tech geek",
+    "Lo-fi",
+    "Algorithmic aesthetics"
+  ],
+  "system_tags": [
+    "Low-value user",
+    "Unstable user",
+    "Tag conflict",
+    "Suspected bot"
+  ],
+  "non_human_tags": [
+    "Window",
+    "Map",
+    "Other: a smiling duck",
+    "Blank form",
+    "Moon",
+    "Rain"
+  ],
+  "identity_name": "LINGLINGLETSGO.D",
+  "carried_fragment": "I AM NOT THE AUTHOR. BUT PLEASE FOLLOW HIM @SHIHAOD.DUAN",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
