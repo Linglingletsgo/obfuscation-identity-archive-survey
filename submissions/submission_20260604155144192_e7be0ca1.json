@@ -1,0 +1,76 @@
+{
+  "submission_id": "submission_20260604155144192_e7be0ca1",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-04T15:51:44.192Z",
+  "shell_form": "Substitute",
+  "places": [
+    "Internet",
+    "Ruin",
+    "Natural environment",
+    "Database"
+  ],
+  "expression_formats": [
+    "Poem",
+    "Legend"
+  ],
+  "material_sources": [
+    "Location trace",
+    "Game character"
+  ],
+  "social_role_tags": [
+    "Student",
+    "New resident",
+    "Archive object"
+  ],
+  "spatial_tags": [
+    "Airport",
+    "Suburb",
+    "Urban edge",
+    "City center"
+  ],
+  "time_era_tags": [
+    "Paused time",
+    "Other: snake",
+    "Seasonal appearance",
+    "High repetition"
+  ],
+  "platform_behavior_tags": [
+    "Minimalist",
+    "Brand loyalist",
+    "Collector"
+  ],
+  "emotion_personality_tags": [
+    "Anxious",
+    "Warm",
+    "Distant",
+    "Stubborn"
+  ],
+  "relationship_tags": [
+    "Solitary person",
+    "Marginal group member",
+    "Ignored"
+  ],
+  "aesthetic_cultural_tags": [
+    "Futurism",
+    "Folklore",
+    "Lo-fi"
+  ],
+  "system_tags": [
+    "Active user",
+    "Low-value user",
+    "High-value user"
+  ],
+  "non_human_tags": [
+    "Dog",
+    "Bird",
+    "Fish",
+    "Insect",
+    "Horse",
+    "Whale"
+  ],
+  "identity_name": "agu",
+  "carried_fragment": "eel sauce",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
