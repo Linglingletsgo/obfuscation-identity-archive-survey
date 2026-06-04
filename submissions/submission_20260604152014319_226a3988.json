@@ -1,0 +1,70 @@
+{
+  "submission_id": "submission_20260604152014319_226a3988",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-04T15:20:14.319Z",
+  "shell_form": "Real self",
+  "places": [
+    "Home"
+  ],
+  "expression_formats": [
+    "Private diary"
+  ],
+  "material_sources": [
+    "Dream"
+  ],
+  "social_role_tags": [
+    "Student",
+    "Freelancer",
+    "Housemate"
+  ],
+  "spatial_tags": [
+    "City center",
+    "Seaside",
+    "Café"
+  ],
+  "time_era_tags": [
+    "Medieval period",
+    "Early 20th century",
+    "Near future"
+  ],
+  "platform_behavior_tags": [
+    "Late-night shopper",
+    "High return rate",
+    "Digital subscriber"
+  ],
+  "emotion_personality_tags": [
+    "Calm",
+    "Gentle",
+    "Adventurous",
+    "Silent"
+  ],
+  "relationship_tags": [
+    "Solitary person",
+    "Cared-for person",
+    "Ignored"
+  ],
+  "aesthetic_cultural_tags": [
+    "Office style",
+    "Luxury",
+    "Pop culture"
+  ],
+  "system_tags": [
+    "Ordinary user",
+    "Identity drift",
+    "Low-value user"
+  ],
+  "non_human_tags": [
+    "Dog",
+    "Wind",
+    "Cat",
+    "Fox",
+    "Rain",
+    "Snow",
+    "Old photo"
+  ],
+  "identity_name": "YILIN",
+  "carried_fragment": "create own garden",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
