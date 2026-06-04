@@ -1,0 +1,99 @@
+{
+  "submission_id": "submission_20260604134000690_32f67196",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-04T13:40:00.690Z",
+  "shell_form": "Shadow",
+  "places": [
+    "Archive",
+    "Natural environment",
+    "Future world",
+    "Game",
+    "Dream"
+  ],
+  "expression_formats": [
+    "Divination result",
+    "Testimony",
+    "Museum label",
+    "Junk file"
+  ],
+  "material_sources": [
+    "Family legend",
+    "Color",
+    "Religious / mythological element",
+    "Game character",
+    "Non-human material"
+  ],
+  "social_role_tags": [
+    "Student",
+    "Freelancer",
+    "Traveler",
+    "Witness",
+    "Archive object"
+  ],
+  "spatial_tags": [
+    "Seaside",
+    "Game world",
+    "Museum",
+    "Rooftop"
+  ],
+  "time_era_tags": [
+    "Mythic age",
+    "Industrial age",
+    "Expired future",
+    "Long silence",
+    "Active at dawn"
+  ],
+  "platform_behavior_tags": [
+    "Late-night shopper",
+    "Anti-recommendation user",
+    "Platform nomad",
+    "Long-term lurker"
+  ],
+  "emotion_personality_tags": [
+    "Anxious",
+    "Distant",
+    "Gentle",
+    "Easily distracted",
+    "Highly sensitive",
+    "Hard to determine"
+  ],
+  "relationship_tags": [
+    "Solitary person",
+    "Anonymous observer",
+    "Waiting to be recognized",
+    "Keeps distance"
+  ],
+  "aesthetic_cultural_tags": [
+    "Anime / manga culture",
+    "Religious atmosphere",
+    "Folklore",
+    "Punk",
+    "Museum-like",
+    "Biological atlas style"
+  ],
+  "system_tags": [
+    "Unpredictable user",
+    "Identity drift",
+    "Suspected bot",
+    "Outlier"
+  ],
+  "non_human_tags": [
+    "Cat",
+    "Fish",
+    "Snake",
+    "Octopus",
+    "Jellyfish",
+    "Fungus",
+    "Snow",
+    "Moon",
+    "Mirror",
+    "Bed",
+    "Crack",
+    "An eye"
+  ],
+  "identity_name": "周餍",
+  "carried_fragment": "倒影",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
