@@ -1,0 +1,83 @@
+{
+  "submission_id": "submission_20260604140245873_9f7a6ab1",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-04T14:02:45.873Z",
+  "shell_form": "Future version",
+  "places": [
+    "Game"
+  ],
+  "expression_formats": [
+    "Legend",
+    "Museum label"
+  ],
+  "material_sources": [
+    "Dream",
+    "Game character"
+  ],
+  "social_role_tags": [
+    "Traveler",
+    "Host",
+    "Anonymous user"
+  ],
+  "spatial_tags": [
+    "City center",
+    "Mountain area",
+    "Airport",
+    "Data center",
+    "Museum"
+  ],
+  "time_era_tags": [
+    "Retro future",
+    "Near future",
+    "Distant future"
+  ],
+  "platform_behavior_tags": [
+    "Hoarder",
+    "Platform nomad",
+    "Saves screenshots",
+    "Anti-recommendation user"
+  ],
+  "emotion_personality_tags": [
+    "Calm",
+    "Anxious",
+    "Stubborn",
+    "Optimistic"
+  ],
+  "relationship_tags": [
+    "Family-oriented",
+    "In an intimate relationship",
+    "Socially active",
+    "Often misunderstood"
+  ],
+  "aesthetic_cultural_tags": [
+    "Nostalgia",
+    "Futurism",
+    "Tech geek",
+    "Luxury",
+    "Game interface style"
+  ],
+  "system_tags": [
+    "Active user",
+    "Recommendation difficulty",
+    "Unpredictable user",
+    "Insufficient information"
+  ],
+  "non_human_tags": [
+    "Dog",
+    "Cat",
+    "Cloud",
+    "Bird",
+    "River",
+    "Star",
+    "Sensor",
+    "Machine",
+    "Artificially cultivated thing",
+    "Simulated life",
+    "Alien creature"
+  ],
+  "identity_name": "Grindizer",
+  "carried_fragment": "I can secretly know how to fly, but I don't want to tell anyone",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
