@@ -1,0 +1,76 @@
+{
+  "submission_id": "submission_20260604134450235_239412dc",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-04T13:44:50.235Z",
+  "shell_form": "Character",
+  "places": [
+    "Natural environment",
+    "Dream"
+  ],
+  "expression_formats": [
+    "Other: Fairytale"
+  ],
+  "material_sources": [
+    "Family legend"
+  ],
+  "social_role_tags": [
+    "Other: Playmate",
+    "Local person",
+    "Regular visitor"
+  ],
+  "spatial_tags": [
+    "Family home",
+    "Forest",
+    "Other: Garden"
+  ],
+  "time_era_tags": [
+    "Mythic age",
+    "Early 20th century",
+    "1990s",
+    "Parallel timeline"
+  ],
+  "platform_behavior_tags": [
+    "Hoarder",
+    "Collector",
+    "Other: Not online at all"
+  ],
+  "emotion_personality_tags": [
+    "Warm",
+    "Impulsive",
+    "Excited",
+    "Other: Playful"
+  ],
+  "relationship_tags": [
+    "Family-oriented",
+    "Dependent on a small circle",
+    "Old friend"
+  ],
+  "aesthetic_cultural_tags": [
+    "Nostalgia",
+    "Folklore",
+    "Environmentalism",
+    "Handmade feeling"
+  ],
+  "system_tags": [
+    "Unpredictable user",
+    "Blurred profile",
+    "Classification failure"
+  ],
+  "non_human_tags": [
+    "Cat",
+    "Bird",
+    "Insect",
+    "Deer",
+    "Rabbit",
+    "Bee",
+    "Moss",
+    "Cloud",
+    "Wind",
+    "Old key"
+  ],
+  "identity_name": "Jinglejangles",
+  "carried_fragment": "Watch out for the rat.",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
