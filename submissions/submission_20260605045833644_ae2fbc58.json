@@ -1,0 +1,103 @@
+{
+  "submission_id": "submission_20260605045833644_ae2fbc58",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-05T04:58:33.644Z",
+  "shell_form": "Parallel-world resident",
+  "places": [
+    "Shopping mall",
+    "Natural environment",
+    "Hospital",
+    "Dream",
+    "Game",
+    "City"
+  ],
+  "expression_formats": [
+    "System error",
+    "Poem",
+    "Private diary",
+    "Medical record",
+    "Museum label"
+  ],
+  "material_sources": [
+    "Random words",
+    "Lyric-like fragment",
+    "Number",
+    "Location trace",
+    "Internet meme",
+    "False memory",
+    "Real memory"
+  ],
+  "social_role_tags": [
+    "Freelancer",
+    "Witness",
+    "Passerby",
+    "Commuter",
+    "Forgotten person"
+  ],
+  "spatial_tags": [
+    "City center",
+    "Library",
+    "Museum",
+    "Rooftop",
+    "Café",
+    "Shopping mall"
+  ],
+  "time_era_tags": [
+    "1920s",
+    "Periodic disappearance",
+    "Retro future",
+    "Looping time",
+    "1970s"
+  ],
+  "platform_behavior_tags": [
+    "Ad avoider",
+    "Multiple-account switcher",
+    "Disappears after browsing",
+    "Browses without buying",
+    "Second-hand preference"
+  ],
+  "emotion_personality_tags": [
+    "Nostalgic",
+    "Distant",
+    "Ironic",
+    "Relaxed",
+    "Speechless",
+    "Optimistic"
+  ],
+  "relationship_tags": [
+    "Anonymous observer",
+    "Keeps distance",
+    "Stranger",
+    "Old friend",
+    "Socially active"
+  ],
+  "aesthetic_cultural_tags": [
+    "Folklore",
+    "Punk",
+    "Luxury",
+    "Lo-fi",
+    "Archive atmosphere"
+  ],
+  "system_tags": [
+    "Noise user",
+    "Predictable user",
+    "Unpredictable user",
+    "Not worth analyzing"
+  ],
+  "non_human_tags": [
+    "Moth",
+    "Bee",
+    "Dust",
+    "An unread email",
+    "Temporary folder",
+    "Potted plant",
+    "Crack",
+    "Radio",
+    "Old photo"
+  ],
+  "identity_name": "Duane",
+  "carried_fragment": "String",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
