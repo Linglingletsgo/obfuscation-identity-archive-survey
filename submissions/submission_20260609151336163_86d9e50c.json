@@ -1,0 +1,79 @@
+{
+  "submission_id": "submission_20260609151336163_86d9e50c",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-09T15:13:36.163Z",
+  "shell_form": "Character",
+  "places": [
+    "Internet",
+    "Workplace",
+    "Archive"
+  ],
+  "expression_formats": [
+    "Poem",
+    "Social media bio",
+    "Untitled file"
+  ],
+  "material_sources": [
+    "News",
+    "Color",
+    "Number"
+  ],
+  "social_role_tags": [
+    "Researcher",
+    "Freelancer",
+    "Recorded subject"
+  ],
+  "spatial_tags": [
+    "Border",
+    "Airport",
+    "Library",
+    "Data center"
+  ],
+  "time_era_tags": [
+    "2020s",
+    "Near future",
+    "Millennium"
+  ],
+  "platform_behavior_tags": [
+    "Minimalist",
+    "Collector",
+    "Deletes records"
+  ],
+  "emotion_personality_tags": [
+    "Calm",
+    "Warm",
+    "Relaxed",
+    "Stubborn"
+  ],
+  "relationship_tags": [
+    "Family-oriented",
+    "Stranger",
+    "Old friend"
+  ],
+  "aesthetic_cultural_tags": [
+    "Minimalism",
+    "Futurism",
+    "Unclassifiable",
+    "Archive atmosphere"
+  ],
+  "system_tags": [
+    "Ordinary user",
+    "Noise user",
+    "Not worth analyzing"
+  ],
+  "non_human_tags": [
+    "Snake",
+    "Jellyfish",
+    "Stone",
+    "Moon",
+    "Mirror",
+    "Server",
+    "Electric wire",
+    "Hybrid species"
+  ],
+  "identity_name": "test",
+  "carried_fragment": "This is just an example.",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
