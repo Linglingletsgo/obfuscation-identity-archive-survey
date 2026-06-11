@@ -1,0 +1,100 @@
+{
+  "submission_id": "submission_20260611070650229_e78a9027",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-11T07:06:50.229Z",
+  "shell_form": "Error archive",
+  "places": [
+    "Internet",
+    "Game",
+    "Dream",
+    "Database",
+    "Ruin",
+    "Future world"
+  ],
+  "expression_formats": [
+    "Chat log",
+    "System error",
+    "Legend",
+    "Museum label",
+    "Divination result"
+  ],
+  "material_sources": [
+    "False memory",
+    "Dream",
+    "Color",
+    "Lyric-like fragment",
+    "Religious / mythological element",
+    "Game character"
+  ],
+  "social_role_tags": [
+    "Outsider",
+    "Traveler",
+    "Observer",
+    "Unclassifiable person"
+  ],
+  "spatial_tags": [
+    "Café",
+    "Game world",
+    "Border",
+    "City center"
+  ],
+  "time_era_tags": [
+    "1920s",
+    "Distant future",
+    "Near future",
+    "Seasonal appearance",
+    "Retro future",
+    "Parallel timeline"
+  ],
+  "platform_behavior_tags": [
+    "Low-frequency high-price consumer",
+    "Collector",
+    "Anti-recommendation user",
+    "Ad avoider"
+  ],
+  "emotion_personality_tags": [
+    "Anxious",
+    "Socially avoidant",
+    "Suspicious",
+    "Cautious",
+    "Ironic",
+    "Impulsive"
+  ],
+  "relationship_tags": [
+    "Long-distance relationship",
+    "Socially active",
+    "Dependent on a small circle",
+    "Waiting to be recognized"
+  ],
+  "aesthetic_cultural_tags": [
+    "Anime / manga culture",
+    "Academic style",
+    "Tech geek",
+    "Punk",
+    "Game interface style"
+  ],
+  "system_tags": [
+    "High-value user",
+    "Unstable user",
+    "Blurred profile",
+    "Insufficient information",
+    "Classification failure",
+    "Suspected bot"
+  ],
+  "non_human_tags": [
+    "Cat",
+    "Fox",
+    "Star",
+    "Glass",
+    "Machine",
+    "Surveillance camera",
+    "Loading icon",
+    "Black screen",
+    "Error code"
+  ],
+  "identity_name": "kalichu",
+  "carried_fragment": "burdening knowledge",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
