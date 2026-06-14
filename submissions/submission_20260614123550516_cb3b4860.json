@@ -1,0 +1,88 @@
+{
+  "submission_id": "submission_20260614123550516_cb3b4860",
+  "dataset": "Obfuscation Identity Archive",
+  "is_test_data": false,
+  "submitted_at": "2026-06-14T12:35:50.516Z",
+  "shell_form": "Dream figure",
+  "places": [
+    "Internet",
+    "City",
+    "Home",
+    "Dream",
+    "Border",
+    "Natural environment"
+  ],
+  "expression_formats": [
+    "Private diary",
+    "Social media bio",
+    "Poem",
+    "Divination result",
+    "Untitled file"
+  ],
+  "material_sources": [
+    "Real memory",
+    "Dream",
+    "Random words"
+  ],
+  "social_role_tags": [
+    "Researcher",
+    "Traveler",
+    "Observer"
+  ],
+  "spatial_tags": [
+    "City center",
+    "Suburb",
+    "Border",
+    "Library",
+    "Forest",
+    "Ruin"
+  ],
+  "time_era_tags": [
+    "Parallel timeline",
+    "Periodic disappearance",
+    "Seasonal appearance"
+  ],
+  "platform_behavior_tags": [
+    "Brand loyalist",
+    "Anonymous browser",
+    "Collector"
+  ],
+  "emotion_personality_tags": [
+    "Calm",
+    "Warm",
+    "Distant",
+    "Nostalgic",
+    "Ironic"
+  ],
+  "relationship_tags": [
+    "Anonymous observer",
+    "Ignored",
+    "Watched"
+  ],
+  "aesthetic_cultural_tags": [
+    "Nostalgia",
+    "Religious atmosphere",
+    "Handmade feeling",
+    "Biological atlas style"
+  ],
+  "system_tags": [
+    "Ordinary user",
+    "Abnormal user",
+    "Risk user",
+    "Not worth analyzing",
+    "Recommendation difficulty",
+    "Blurred profile"
+  ],
+  "non_human_tags": [
+    "Bird",
+    "Fish",
+    "Insect",
+    "Moss",
+    "Seed",
+    "Dust"
+  ],
+  "identity_name": "Dawn",
+  "carried_fragment": "我会在黎明之际注视着你们，爱着你们。",
+  "consent_data_use_scope": "I have read and agree to the stated use scope, including artistic machine-based organization or generation within this project, and I am willing to submit this obfuscation identity archive.",
+  "consent_artistic_machine_processing_required": true
+}
